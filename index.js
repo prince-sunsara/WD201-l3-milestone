@@ -31,7 +31,7 @@ const todoList = () => {
     const toDisplayableList = (list) => {
       // Format the To-Do list here, and return the output string as per the format given above.
       return list.map((todo) => {
-        display_status = todo.completed ? "[X]" : "[ ]";
+        display_status = todo.completed ? "[x]" : "[ ]";
         display_date = todo.dueDate == today ? "" : todo.dueDate;
 
         return `${display_status} ${todo.title} ${display_date}`;
